@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Zeta</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 250px auto 250px;
+            grid-template-rows: auto auto auto 50px;
+            grid-template-areas: 
+            "head head picture"
+            "article article article"
+            "nav aside aside"
+            "foot foot foot";
+        }
+        picture{
+            background: pink;
+            color: white;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        header {
+            background:rgb(55, 55, 55);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            grid-area: head/head;  
+        }
+        article {
+            background-color: pink;
+            grid-area: article/article/article;
+            padding: 20px;
+        }
+        nav {
+            background: rgb(209, 117, 132);
+            color: white;
+            padding: 10px;
+            border: 15px solid pink;
+        }
+        aside {
+            background: rgb(55, 55, 55);
+            color: white;
+            padding: 10px;
+            border: 15px solid pink;
+            grid-area: aside/aside;
+            text-align: center;
+        }
+        footer{
+            background: pink;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            grid-area: foot/foot/foot;
+        }
+        .zeta-text {
+           text-align: center;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: white;
+        }
+        .hello-text {
+            text-align: left;
+            position: absolute;    
+        }
+        span {
+            padding: 5px;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h3 {
+            color: white;
+            text-shadow: 2px 2px rgb(209, 117, 132);
+        }
+        a:link {
+            color: rgb(174, 37, 60);
+        }
+        a:visited {
+            color: rgb(209, 117, 132);
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+        color: rgb(255, 0, 98);
+        }
+        .projectLinks:hover .imageLink{
+            opacity: .5;
+        }
+        .projectLinks:hover .language{
+            opacity: 1;
+        }
+        div.gallery img {
+            width: auto;
+            height: 200px;
+        }
+        .projectLinks {
+            float: left;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .language {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: pink;
+            padding: 5px;
+            opacity: 0;
+            color: black
+        }
+        .projectImages {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+          }
+    </style>
+</head>
+
+<body>
+    <picture>
+        <div> 
+        <img src=IMG_7352.jpeg alt="This is me" style="width: 200px;">
+    </div>
+    </picture>
+    <header>
+        <div class="zeta-text">
+            <h1>Zeta Lenhart-Boyd</h1>
+            <p>Elon University Computer Science Graduate</p>
+        </div>
+    </header>
+    <article>
+        <h3> Career Goals</h3>
+        <p>
+            I am an aspiring programmer with a love for problem solving and incorporating art and cool design into my work. Having just graduated from Elon College (BA Computer Science) I’m ready for a career in web or mobile app development where I can stretch my technical and artistic skills. My lifelong love of puzzles and mathematical skills led me  to computer science and programming. I especially enjoy creating websites and games that are visually pleasing and technically challenging.  Getting to the WOW factor is my goal. 
+            <br>
+            <h3>More about me</h3>
+            I live on a farm with horses, goats, ducks, dogs, and chickens in rural North Carolina. I like to spend my free time painting or creating digital art.  You can’t keep me away from a cool new game. I’m the one in the platform shoes with tattoos that is always laughing. Fun fact about me: I prefer cold food even when it’s supposed to be hot (like cold pizza and cold pasta)
+            <br>
+            <br>
+        </p>
+        <span>
+            All the nitty gritty stuff is on my <b><a href="Zeta Lenhart-Boyd Resume.pdf">resume</a></b> !
+        </span>
+    </article>
+    <nav>
+        <h3 style="text-align: center;">Languages</h3>
+        <table>
+            <tr >
+                <td style="width: 20%;"></td>
+                <td style="width: auto;">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>Swift</li>
+                    </ul>
+                </td>
+                <td style="width: 25%;"></td>
+            </tr>
+    </table>
+    </nav>
+    <aside>
+        <h2>Project Links (github)</h2>
+        <!---<div>
+            <a href="https://github.com/ZetaLB/DiceGame"><img src="DiceGame.jpeg" width="80px" alt="Dice Game, Swift" class="imageLink"></a> 
+            <a href="https://github.com/ZetaLB/FloatyBall"><img src="floatyball.jpeg" width="80px" alt="Floaty Ball Game, Swift" class="imageLink"></a>
+            <a href="https://github.com/ZetaLB/Robotics"><img src="robot.jpeg" width="130px" alt="Robot, Java" class="imageLink"></a> 
+            <a href="https://github.com/ZetaLB/CheatingHangman"><img src="cheatingHangman.jpeg" width="130px" alt="Cheating Hangman Game, Python" class="imageLink"></a>
+            <img src="adventureTime.jpeg" width="265px" alt="one of my paintings, Procreate" class="imageLink"> 
+        </div> --->
+
+        <!--- Dice Game Image -->
+        <div class="projectImages">
+        <div class="projectLinks">
+            <div class="gallery">
+            <a href="https://github.com/ZetaLB/DiceGame"><img src="DiceGame.jpeg" alt="Dice Game, Swift" class="imageLink"></a>
+            <div class="language">Swift</div>
+        </div>
+        </div> 
+        <!-- Floaty Ball Image -->
+        <div class="projectLinks">
+            <div class="gallery">
+                <a href="https://github.com/ZetaLB/FloatyBall"><img src="floatyball.jpeg" alt="Floaty Ball Game, Swift" class="imageLink"></a>
+            <div class="language">Swift</div>
+        </div>
+        </div> 
+        <!-- Robot Image -->
+        <div class="projectLinks">
+            <div class="gallery">
+                <a href="https://github.com/ZetaLB/Robotics"><img src="robot.jpeg" alt="Robot, Java" class="imageLink"></a> 
+            <div class="language">Java</div>
+        </div>
+        </div> 
+        <!-- Cheating Hangman Image -->
+        <div class="projectLinks">
+            <div class="gallery">
+                <a href="https://github.com/ZetaLB/CheatingHangman"><img src="cheatingHangman.jpeg" alt="Cheating Hangman Game, Python" class="imageLink"></a>
+            <div class="language">Python</div>
+        </div>
+        </div> 
+        <!-- Art Image-->
+        <div class="projectLinks">
+            <div class="gallery">
+                <a href="Zetas Art.pdf"><img src="adventureTime.jpeg" alt="one of my paintings, Procreate" class="imageLink"></a> 
+            <div class="language">Art</div>
+        </div>
+        </div>
+        </div>
+    </aside>
+    <footer>
+        I hope you liked getting to know me !
+    </footer>
+</body>
+</html>
